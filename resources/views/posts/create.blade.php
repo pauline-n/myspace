@@ -16,7 +16,7 @@
         {{Form::file('cover_img')}}
     </div>
 
-    {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-{!! Form::close() !!}
+        {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+    {!! Form::close() !!}
 
 @endsection

@@ -170,7 +170,7 @@ class PostsController extends Controller
 
         //check for correct user
         if(auth()->user()->id !== $post->user_id){
-            return redirect('/posts')->with('error', 'Unauthorised page');
+            return redirect('posts')->with('error', 'Unauthorised page');
         }
 
         if($post->cover_img != 'noimage.jpg'){

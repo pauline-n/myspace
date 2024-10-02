@@ -8,9 +8,9 @@ class PagesController extends Controller
 {
     //any function inside of class is also calle da methos
     public function index(){
-        $title = 'Welcome to Laravel';
+        $message = 'Welcome to Laravel';
         // return view('pages.index', compact('title')); //one way to do this
-        return view('pages.index')->with('title', $title); //the second  way
+        return view('pages.index')->with('message', $message); //the second  way
     }
 
     public function about(){
