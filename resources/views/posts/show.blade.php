@@ -18,10 +18,9 @@
 
             {!!Form::open(['route' => ['posts.destroy', $post->id], 'method', 'POST', 'class'=> 'pull-right']) !!}
                 {{Form::hidden('_method', 'DELETE')}}
-                {!!Form::submit('Delete', ['class'=> 'btn btn-danger']!!}
+                {!!Form::submit('Delete', ['class'=> 'btn btn-danger'])!!}
             {!! Form::close() !!}
         @endif
-
     @endif
 
 

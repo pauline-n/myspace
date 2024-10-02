@@ -8,7 +8,7 @@ class PagesController extends Controller
 {
     //any function inside of class is also calle da methos
     public function index(){
-        $message = 'Welcome to Laravel';
+        $message = 'Welcome to MySpace';
         // return view('pages.index', compact('title')); //one way to do this
         return view('pages.index')->with('message', $message); //the second  way
     }

@@ -58,7 +58,7 @@ class PostsController extends Controller
             'cover_img'=>'image|nullable|max:1999' //this validation means it has to be an image wether jpg, png etc and it shud be maximum 2mb so that apache doesnt throw an error, and the nullable is to meaning uploading is optional
         ]);
 
-        //hanle file upload
+        //handle file upload
         if($request->hasFile('cover_img')){
             //get file name with the extension
             $filenameWithExt = $request->file('cover_img')->getClientOriginalName();
@@ -72,7 +72,7 @@ class PostsController extends Controller
             $path = $request->file('cover_img')->storeAs('public/cover_images', $fileNameToStore);
 
         } else {
-            $fileNameToStore = 'age.jpg';
+            $fileNameToStore = 'noimage.jpg';
         }
 
         //create a post
