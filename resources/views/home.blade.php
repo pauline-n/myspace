@@ -29,10 +29,10 @@
                                         <td>{{$post->title}}</td>
                                         <td><a href="{{ url("/posts/{$post->id}/edit")}}" class="btn btn-default">Edit</a></td>
                                         <td>
-                                            {{!!Form::open(['route' => ['posts.destroy', $post->id], 'method', 'POST', 'class'=> 'pull-right']) !!}}
+                                            {!!Form::open(['route' => ['posts.destroy', $post->id], 'method', 'POST', 'class'=> 'pull-right']) !!}
                                                 {{Form::hidden('_method', 'DELETE')}}
-                                                {{Form::submit('Delete', ['class'=> 'btn btn-danger'])}}
-                                            {{!! Form::close() !!}}
+                                                {!!Form::submit('Delete', ['class'=> 'btn btn-danger'])!!}
+                                            {!! Form::close() !!}
                                         </td>
                                     </tr>
                                 @endforeach
