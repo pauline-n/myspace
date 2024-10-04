@@ -17,7 +17,7 @@ npm install
 composer update
 
 ## Sponsors
-Feel free to partner or sponsor our activities, email us on prosperlend@gmail.com if interested and we will share our paypal details. Thank you for your generosity
+Feel free to partner or sponsor our activities, email us on myspacecraft24@gmail.com if interested and we will share our paypal details. Thank you for your generosity
 May God richly reward you
 
 ## Contributing
@@ -29,7 +29,7 @@ In order to ensure that we work together please note respect for one another and
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within the app, please send an e-mail to prosperlend@gmail.com All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within the app, please send an e-mail to myspacecraft24@gmail.com All security vulnerabilities will be promptly addressed.
 
 ## License
 
