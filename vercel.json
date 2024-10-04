@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "public/index.php",
+        "use": "@vercel/php"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/public/index.php"
+      }
+    ],
+    "build": {
+      "env": {
+        "COMPOSER_ALLOW_SUPERUSER": "1"
+      },
+      "commands": [
+        {
+          "run": "curl -sS https://getcomposer.org/installer | php"
+        },
+        {
+          "run": "php composer.phar install"
+        },
+        {
+          "run": "php artisan config:cache"
+        },
+        {
+          "run": "php artisan route:cache"
+        }
+      ]
+    }
+  }
